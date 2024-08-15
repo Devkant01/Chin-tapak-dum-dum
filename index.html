@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas FrameCraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            background: linear-gradient(to right,
+                    rgb(255, 255, 255) 50%,
+                    rgb(37, 37, 37) 50%);
+            background-size: 200% 100%;
+            background-position-x: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent relative w-full bg-zinc-400">
+        <div class="w-full sticky top-0 left-0 h-screen">
+            <canvas id="frames" class="w-full h-screen"></canvas>
+        </div>
+        <div class="relative w-full h-[100vh]"></div>
+        <div class="relative w-full h-[100vh]"></div>
+        <div class="relative w-full h-[100vh]"></div>
+        <div class="relative w-full h-[100vh]"></div>
+        <div class="relative w-full h-[100vh]"></div>
+        <div class="relative w-full h-[100vh]"></div>
+        <div class="relative w-full h-[100vh]"></div>
+        <div class="textPage relative w-full h-[200vh] z-[9] flex items-end overflow-hidden ">
+            <div
+                class="container relative w-full h-[40vh] flex justify-center items-end  text-white font-extrabold font-serif tracking-wide overflow-hidden text-xl md:text-[2rem]">
+                <div class="w-full text-center firstPart mb-[240px] text-transparent">CHIN TAPAK DUM DUM</div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="forScroll w-full h-[30px] "></div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
